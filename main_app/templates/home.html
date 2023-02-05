@@ -1,0 +1,1430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AAKAAR 2023</title>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link 
+    href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" 
+    rel="stylesheet"  type='text/css'>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/bluu" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+    integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous">
+    </script>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
+    @import url('https://fonts.cdnfonts.com/css/bluu-next');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: inherit;
+}
+:root {
+    --primary: #1B2432;
+    --secondary: #FFB100;
+}
+body {
+    background-color: #1B2432;
+    color: #FDEDF0;
+}
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+p{
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+h1{
+  font-family: 'BluuNextBold';
+  font-weight: bold;
+  font-style: italic bold;
+}
+h2{
+  font-family: "BluuNextBold";
+  font-style: italic bold;
+}
+
+/* start: Gallery Section */
+.gallery-section {
+    overflow: hidden;
+    position: relative;
+}
+.gallery-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 940px;
+    height: 100%;
+    background-image: linear-gradient(90deg, var(--primary) 50%, transparent 100%);
+    z-index: 1;
+    pointer-events: none;
+}
+.gallery-section::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background-image: linear-gradient(0deg, var(--primary), transparent);
+    z-index: 1;
+    pointer-events: none;
+}
+.gallery-wrapper {
+    position: relative;
+}
+.gallery-content {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 440px;
+    height: 75%;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+.gallery-content h1 {
+    font-size: 36px;
+    color: #FDEDF0;
+    font-weight: 700;
+    margin-bottom: 22px;
+}
+.gallery-content p {
+    color: #FDEDF0;
+    line-height: 1.5;
+}
+.gallery-images-box {
+    padding-left: 300px;
+    min-height: 500px;
+    height: 100vh;
+}
+.gallery-images-wrapper {
+    display: flex;
+    transform: rotateZ(15deg);
+}
+.gallery-images {
+    margin-top: -100px;
+    margin-right: 32px;
+    animation: animate var(--duration, 10s) infinite linear;
+}
+.gallery-images:hover {
+    animation-play-state: paused;
+}
+.gallery-images a {
+    display: block;
+    width: 160px;
+    height: 160px;
+    margin-bottom: 32px;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all .3s;
+}
+.gallery-images a:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 4px var(--primary), 0 0 0 6px var(--secondary);
+}
+.gallery-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-50%);
+    }
+}
+/* end: Gallery Section */
+
+
+
+/* start: Breakpoints */
+@media screen and (max-width: 1400px) {
+    .container {
+        max-width: 1160px;
+    }
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: 940px;
+    }
+}
+
+
+
+@media screen and (max-width: 991px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .gallery-images-box {
+        padding-left: 100px;
+    }
+    .gallery-section::before {
+        width: 720px;
+    }
+}
+
+
+
+@media screen and (max-width: 767px) {
+    .container {
+        max-width: 540px;
+    }
+
+    .gallery-content {
+        width: 100%;
+        height: auto;
+        padding: 48px 0 24px;
+    }
+    .gallery-images-box {
+        padding-left: 0;
+        margin-left: -300px;
+        min-height: 700px;
+    }
+    .gallery-section::before {
+        background-image: linear-gradient(180deg, var(--primary) 40%, transparent 100%);
+        height: 500px;
+    }
+}
+/* end: Breakpoints */
+
+
+
+:root {
+  --d: 700ms;
+  --e: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.page-content {
+  display: grid;
+  grid-gap: 1rem;
+  padding: 1rem;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+@media (min-width: 600px) {
+  .page-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 800px) {
+  .page-content {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.card {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+  color: whitesmoke;
+  background-color: whitesmoke;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 600px) {
+  .card {
+    height: 350px;
+  }
+}
+.card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 110%;
+  background-size: cover;
+  background-position: 0 0;
+  transition: transform calc(var(--d) * 1.5) var(--e);
+  pointer-events: none;
+}
+.card:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  pointer-events: none;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.009) 11.7%, rgba(0, 0, 0, 0.034) 22.1%, rgba(0, 0, 0, 0.072) 31.2%, rgba(0, 0, 0, 0.123) 39.4%, rgba(0, 0, 0, 0.182) 46.6%, rgba(0, 0, 0, 0.249) 53.1%, rgba(0, 0, 0, 0.32) 58.9%, rgba(0, 0, 0, 0.394) 64.3%, rgba(0, 0, 0, 0.468) 69.3%, rgba(0, 0, 0, 0.54) 74.1%, rgba(0, 0, 0, 0.607) 78.8%, rgba(0, 0, 0, 0.668) 83.6%, rgba(0, 0, 0, 0.721) 88.7%, rgba(0, 0, 0, 0.762) 94.1%, rgba(0, 0, 0, 0.79) 100%);
+  transform: translateY(-50%);
+  transition: transform calc(var(--d) * 2) var(--e);
+}
+.card:nth-child(1):before {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(https://lh3.googleusercontent.com/u/1/drive-viewer/AAOQEOQXqSsYAAGxcGZqqC1OKDKUVA3ZQHZevRO1qtssM29npxwryFKI1S3MluPXvjmE1dwod47qthcq6tfYKgJRH3RvkSmY=w1365-h648);
+}
+.card:nth-child(2):before {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(https://lh3.googleusercontent.com/u/0/drive-viewer/AAOQEOQYH2agJQ3ToPHYTYnEZm5s4qEoN8YSjNDJmYE69VU6g3Q5lkg3i7vZmJYXd7Q4DfvqgBMBng5Z-VRGIpqmYDWl8Q2Vtw=w1365-h648);
+  background-size: cover;
+}
+.card:nth-child(4):before {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(https://lh3.googleusercontent.com/u/1/drive-viewer/AAOQEOQRarR05jut2-oJVolpHVCyhzMK4sKthOIvqna1XaVaBdxC4KSp15hJHs0lwdEpUuFrtfH0xQZ6BGDKp33ryEyujOwRbQ=w1365-h648);
+  background-size: cover;
+
+}
+.card:nth-child(3):before {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(https://lh3.googleusercontent.com/u/1/drive-viewer/AAOQEOQtm2Z57C9JOWZHx2QP2hI1fgZb8-QIVaE_GfiBkaL2XXa5yM1kJ8QXkeTrMpvj__gKGIaYYn2lWYVkna7Gqd17l3c1Xg=w1365-h648);
+  background-size: cover;
+
+}
+
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  transition: transform var(--d) var(--e);
+  z-index: 1;
+}
+.content > * + * {
+  margin-top: 1rem;
+}
+
+.title {
+  font-size: 1.7rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.copy {
+  font-size: 1.1 rem;
+  line-height: 1.2;
+  text-align: start;
+}
+
+.btn {
+  cursor: pointer;
+  margin-top: 0.2rem;
+  padding: 0.5rem 1.5rem;
+  font-size: 1 rem;
+  font-weight: bold;
+  letter-spacing: 0.025rem;
+  text-transform: uppercase;
+  color: white;
+  background-color: black;
+  border: none;
+}
+.btn:hover {
+  background-color: #0d0d0d;
+}
+.btn:focus {
+  outline: 1px dashed yellow;
+  outline-offset: 3px;
+}
+
+@media (hover: hover) and (min-width: 600px) {
+  .card:after {
+    transform: translateY(0);
+  }
+
+  .content {
+    transform: translateY(calc(100% - 4.5rem));
+  }
+  .content > *:not(.title) {
+    opacity: 0;
+    transform: translateY(1rem);
+    transition: transform var(--d) var(--e), opacity var(--d) var(--e);
+  }
+
+  .card:hover,
+.card:focus-within {
+    align-items: center;
+  }
+  .card:hover:before,
+.card:focus-within:before {
+    transform: translateY(-4%);
+  }
+  .card:hover:after,
+.card:focus-within:after {
+    transform: translateY(-50%);
+  }
+  .card:hover .content,
+.card:focus-within .content {
+    transform: translateY(0);
+  }
+  .card:hover .content > *:not(.title),
+.card:focus-within .content > *:not(.title) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: calc(var(--d) / 8);
+  }
+
+  .card:focus-within:before, .card:focus-within:after,
+.card:focus-within .content,
+.card:focus-within .content > *:not(.title) {
+    transition-duration: 0s;
+  }
+}
+
+
+
+
+
+.section-header {
+  display: block;
+  margin-top: 20px;
+  position: relative;
+  text-align: center;
+}
+.section-header h1 {
+  color: #212121;
+  display: inline-block;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+  padding: 0 0 24px;
+  position: relative;
+  z-index: 2;
+}
+.section-header h1:after {
+  position: absolute;
+  display: block;
+  width: auto;
+  height: 3px;
+  bottom: 0;
+  left: 20%;
+  right: 20%;
+  border-radius: 1px;
+  content: "";
+  z-index: 1;
+  background: #e6e9ec;
+}
+section {
+  padding-bottom: 30px;
+  overflow: hidden;
+  position: relative;
+}
+a,
+a:link,
+a:visited {
+  color: #212121;
+  text-decoration: none;
+}
+.micro-slider {
+  height: 480px;
+  /* margin: 10px 0; */
+  position: relative;
+  width: 100%;
+}
+.micro-slider.fullwidth {
+  height: 480px;
+  /* margin: 64px 0; */
+}
+.micro-slider.fullwidth .slider-item {
+  height: 480px;
+  line-height: 480px;
+  width: 100%
+}
+.slider-wrapper {
+  overflow: hidden;
+  position: relative;
+  transform-style: preserve-3d;
+  transform-origin: 0 50%;
+}
+.slider-item {
+  background: #FFF;
+  box-shadow: 0 1px 3px rgba(0,0,0,.06), 0 1px 2px rgba(0,0,0,.12);
+  color: #FFF;
+  display: none;
+  font-size: 72px;
+  height: 320px;
+  line-height: 320px;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 320px;
+  cursor: pointer;
+}
+/*
+.slider-item:not(.active) {cursor: pointer;}
+*/
+.indicators {
+  bottom: 0px;
+  left: 50%;
+  list-style-type: none;
+  margin: 0 0 0 -77px;
+  padding: 0;
+  position: absolute;
+}
+.indicators li {
+  color: #fff;
+  float: left;
+  height: 16px;
+  margin-right: 8px;
+  text-align: center;
+  width: 16px;
+}
+.indicators li:last-child {margin: 0;}
+.indicators a {
+  background: #FFF;
+  border-radius: 8px;
+  border: 1px solid #E6E9EC;
+  color: #FFF;
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+}
+.indicators .active a {background: #E6E9EC;}
+.s1 {background: url(https://www.iitk.ac.in/dora/imag/profile/E_8.jpg); background-size: cover;}
+.s2 {background: url(https://et-edge.com/conferences/infra/wp-content/uploads/2022/09/ashwini-bhide.jpg
+    ); background-size: cover;}
+.s3 {background: url(https://ed.iitm.ac.in/~gsaravana/opt2016/s6.jpg
+); background-size: cover;}
+.s4 {background: #00bcd4;}
+.s5 {background: #009688;}
+.s6 {background: #4caf50;}
+  
+  
+
+
+
+
+
+
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-transparent" style=" margin-top: 0px; margin-bottom: 0; padding-top: 0px; padding-bottom: 0; z-index: 2000; background-color: transparent; padding-right:0; margin-right:0; margin-left:0; padding-left:0;">
+        <div class="container"><a href="/"> <img src="https://raw.githubusercontent.com/Himanshi62/AAKAAR/main/aakar-website/static/img/Aakaar-logo-large.png" width="180px"></a>
+          <button type="button" style="background-color: white;" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+            class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
+          <div id="navbarSupportedContent" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto" style="margin-left: 200px;">
+              <!-- <li class="nav-item active "><a href="#about" class="nav-link" style="font-size: 20px; color: white; font-family: 'Bai Jamjuree', sans-serif;"> About </a>
+              </li>
+              -->
+              <li class="nav-item active "><a href="https://events.aakaariitbombay.org/" class="nav-link" style="font-size: 22px; color:white; font-family: 'Bai Jamjuree', sans-serif;">
+                Events</a></li>
+              <li class="nav-item active "><a href="https://competition.aakaariitbombay.org/" class="nav-link" style="font-size: 22px; color: white; font-family: 'Bai Jamjuree', sans-serif;"> Competitions </a>
+              </li>
+              <li class="nav-item active "><a href="https://symposium.aakaariitbombay.org/" class="nav-link" style="font-size: 22px; color: white; font-family: 'Bai Jamjuree', sans-serif;">
+                Symposium</a></li>
+                <li class="nav-item active "><a href="https://aakaariitbombay.org/smartpitch/" class="nav-link" style="font-size: 22px; color: white; font-family: 'Bai Jamjuree', sans-serif;">
+                    Smart Pitch</a></li>
+              <li class="nav-item active "><a href="https://aakaariitbombay.org/cr/" class="nav-link" style="font-size: 22px; color:white; font-family: 'Bai Jamjuree', sans-serif;">
+                CR Portal</a></li>
+           
+                
+                    <li class="nav-item active  "><a href="#contact" class="nav-link" style="font-size: 22px; color:white; font-family: 'Bai Jamjuree', sans-serif;"> Contact Us</a>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      {% if is_not_home %}
+      <div class="container">
+        {% if is_exists%}
+        <div class="alert alert-danger text-center alert-dismissible fade show" role="alert">
+          <strong>Hi!</strong> {{message}}
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+      {% else %}
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+          <strong>Hi!</strong> {{message}}
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+      {% endif %}
+      </div>
+      {% endif %}
+      
+
+<!-- start: Gallery Section -->
+<section class="gallery-section">
+    <div class="container">
+      <div class="gallery-wrapper">
+        <div class="gallery-content">
+          <div style=" margin-top:5px">
+            
+            <h2 class="  text-left  display-5 text-white ">DREAM</h2>
+            <h2 class="  text-left  display-5 text-white ">CONSTRUCT</h2>
+            <h2 class="  text-left  display-5 text-white ">INNOVATE</h2>
+            <p class="lead mb-4" style="font-size: 18px;">Aakaar is the annual festival of the Department of Civil Engineering, IIT Bombay comprising a range of engaging competitions, workshops, lecture series, panel discussions, industrial talks, exhibitions, and various entertaining learning events. Since its inception in 2009, it has become Asia’s largest Departmental College festival. Aakaar serves as a forum for discussion and offers opportunities for developing new skills for engineering students across India.</p>
+          </div>
+        </div>
+        <div class="gallery-images-box">
+          <div class="gallery-images-wrapper">
+            <div class="gallery-images" style="--duration: 10s;">
+              <a href="#">
+                <img src="https://lh3.googleusercontent.com/u/1/drive-viewer/AFDK6gME8qls1VKXz_rczyebExKMaQMk2LM1l8eGt4XOxGuI0L-8vql_zbbMcBIKKd5QHW5KKMsqfnM94J_GeJfzi9duvlsJha24dT0uVNQBgY32DYPjX3rKdq40LdTM=w1365-h648" alt="">
+              </a>
+              <a href="#">
+                <img src="https://lh3.googleusercontent.com/u/1/drive-viewer/AFDK6gPChe82w_g3vQFIo8h2HzZ0L7Msw_fJcURgqFdzQrgthGRpmClpEbc0rP_LI_WMyu6QEJPpD7fU5_NV12HtmScaKmf4=w1365-h648" alt="">
+              </a>
+
+              <a href="#">
+                <img src="https://lh3.googleusercontent.com/u/1/drive-viewer/AFDK6gPqjoSbdBdW-NbDI2cXoT_x73seCEX-HPfMmXEUdifKEDYbkCGHtFxIVVsWtgbzdTDlZ06f6vIi749GrQf9tiExTGnO=w1365-h648" alt="">
+              </a>
+
+              <a href="#">
+                <img src="https://lh3.googleusercontent.com/u/1/drive-viewer/AFDK6gNkwH-hmppp3hAS8dKgPUuquuprkyIDiK8fF78NwrstGJrcHbRj7J8oNHIBaj_NHch1f9NLQF_e4NTHEVnbyIyntNAA=w1366-h649" alt="">
+              </a>
+
+              <a href="#">
+                <img src="https://lh3.googleusercontent.com/u/1/drive-viewer/AFDK6gNrqMq1OfFaFGRJoPB5TofnIIgODYuBmiqd3TEbYL2GSxWW2wOnp8akJYpcGT89l9msN0UKmTZU-I55c-NvQiGaPS02Sg=w1365-h648" alt="">
+              </a>
+
+              <a href="#">
+                <img src="https://lh3.googleusercontent.com/u/1/drive-viewer/AFDK6gMo6jW0NYbnYsONZPTmER8YPjPAg29rqlYNfVCUwfLEUesEWtKHJF-ujIcxZrgEW3aCwkQ_WAjKK1_uOSz90S8MhhPL=w1365-h648" alt="">
+              </a>
+
+              <a href="#">
+                <img src="https://lh3.googleusercontent.com/u/1/drive-viewer/AFDK6gNNht85gRPqL_8dJPC5lkpvus2qc9ly_GxFVFmcZ41Df208A1rr-8k6OMI-e5yo041I-iljronR8zoOPSS7BC0GbTKh=w1366-h649" alt="">
+              </a>
+
+              <a href="#">
+                <img src="https://lh3.googleusercontent.com/u/1/drive-viewer/AFDK6gMY7N-CRWuK6uY4RlM94ncuq6egtyMhoFmtmqHXDE-3wms7da_n7nkJrDskhokGCL6igFoVWeKlqb6JX7IkhCJqVjkh=w1366-h649" alt="">
+              </a>
+              <a href="#">
+                <img src="https://lh3.googleusercontent.com/u/1/drive-viewer/AFDK6gN7YJRG9sj5dRdt2HfOdm7qJp_qPNPcBCkUsmOtKUf7djWzI4obuwCWfHWkRZLxiz648ogEVxqhc-AQd8dSU-zrLJWSQw=w1366-h649" alt="">
+              </a>
+              <a href="#">
+                <img src="https://lh3.googleusercontent.com/u/1/drive-viewer/AFDK6gNqr4b8-JPCSwtlGYD-h7tvYFzqGDzpzsksGn6DdpN2rZRrZcmZzNUsN8HshuqvyK_IjqJCRfiii-0TWZ2rp5QKRAV2Rg=w1365-h648" alt="">
+              </a>
+              <a href="#">
+                <img src="https://lh3.googleusercontent.com/u/1/drive-viewer/AFDK6gMPmEEoo6N7PAERTfGcZig9Ip0PKXddbIZIR53-fRtNIR-Qg50gmWrOAN8DopVGTLt9JzRf7eGbkA8EoGcHoCvZpXrC=w1366-h649" alt="">
+              </a>
+              <a href="#">
+                <img src="https://lh3.googleusercontent.com/u/1/drive-viewer/AFDK6gMJhmGxiLATVLYBgbJYeebwNTWdsknNd1dTvTVuif3s69ZVMeQsCMOp-fZdsELoURYo0ZFOkWsrbpZuR7QWySUkjM7e=w1366-h649" alt="">
+              </a>
+            </div>
+            <div class="gallery-images" style="--duration: 15s;">
+              <a href="#">
+                <img src="https://lh3.googleusercontent.com/u/1/drive-viewer/AFDK6gPPedv9CNg_nDqYbTdNxVvY71ITkoLKY_Z-N8GESMZd2Wjr-8oGsOA24Fc6NkPnBFtf_LJC726I3Pc3o30srfsHszvVBw=w1366-h649" alt="">
+              </a>
+
+              <a href="#">
+                <img src="https://lh3.googleusercontent.com/u/1/drive-viewer/AFDK6gNEn6KAdYN520wNTVTc61NLGQP20Yzp-UhK2tMl4U2HgDQBNvl-3VQ5F1bNsYbemrc23lVRWhXZCciIYh9Uy-egCZCHzA=w1366-h649" alt="">
+              </a>
+              <a href="#">
+                <img src="https://lh3.googleusercontent.com/u/1/drive-viewer/AFDK6gMdW8HENAI2vE_7egQnMf1abJDKBRfGB8xYRPKe10IfhQReEOZqi0Qu6DZOi4eBvrMEp826ClvOF_SylSezFXSqxyRizg=w1366-h649" alt="">
+              </a>
+              <a href="#">
+                <img src="https://lh3.googleusercontent.com/u/1/drive-viewer/AFDK6gMhSJ_SARx-DsEq9184Bc6O8MUpGxz11-lvKid8cbzaXprMKNOB5Y9CnQ5fLiWJbujf8qBg7Ro65rNiWn8uJnr17Mjn=w1366-h649" alt="">
+              </a>
+              <a href="#">
+                <img src="https://lh3.googleusercontent.com/u/1/drive-viewer/AFDK6gM6n-JC1LQveCrWYBQ2WWgVs69YbGsaeHEVHcyPAWNyZrTtzzXN9P7ecmTBTMD_eFO4ZbNwWxFwAms4AVyhJWMXNUHJOw=w1366-h649" alt="">
+              </a>
+              <a href="#">
+                <img src="https://lh3.googleusercontent.com/u/1/drive-viewer/AFDK6gMOfwijZIvaiFEkq2ghrHhorvMx9ApqpFICmXZFpl0psMi6MRpQ2wP7kpG_xZadsGz7k0g3e_ysAzDne_PQkVQWnmw8zA=w1366-h649" alt="">
+              </a>
+              <a href="#">
+                <img src="https://lh3.googleusercontent.com/u/1/drive-viewer/AFDK6gPKzm5-cYy3UThcusXhYIQZ_A3rWjmgmmo_0-1R0eBDSA2kVx2hhflv6yv6cD_avq0qFiA17qwH5U3Ilj9zIoTkealZ=w1366-h649" alt="">
+              </a>
+              <a href="#">
+                <img src="https://lh3.googleusercontent.com/u/1/drive-viewer/AFDK6gNkKjRY8H0RiGf0vEUfDGZeADiob5S6t_zCofvCCaLXrGedEElM4zix5MGJ61nonlSQ-GnC2A7sa8Slonbm1uDgP4HJKw=w1366-h649" alt="">
+              </a>
+              <a href="#">
+                <img src="https://lh3.googleusercontent.com/u/1/drive-viewer/AFDK6gOkii2FM422mO016UTKn8K_I0RtWVbcLbvzMskxAtplf2YUX74bi46qiOJMfuwrwYqE14VWKd8R1FW5JGHLnpduupyvDw=w1366-h649" alt="">
+              </a>
+              <a href="#">
+                <img src="https://lh3.googleusercontent.com/u/1/drive-viewer/AFDK6gMKr-tdVmREMARYnIyCamR1Jq7ex02Od_ZX-AqWTYjk4lHdkBw2P0at1H9X3V22xQ-h9Tsyvxu5J28ZHptL_3kEnkDp=w1366-h649" alt="">
+              </a>
+              <a href="#">
+                <img src="https://lh3.googleusercontent.com/u/1/drive-viewer/AFDK6gMaUgscaMsKnigeecsrwS8XvQ0_J6YV9o6injQX6UgCagLEeau0MP155AIXp2h8MBcv-6L-T_vsxj_sJ8J751JyMaoCkQ=w1366-h649" alt="">
+              </a>
+              <a href="#">
+                <img src="https://lh3.googleusercontent.com/u/1/drive-viewer/AFDK6gPyGqe1vfEIDD62lRcTFQqyDlU3jl2FzBjOrbryoNJIH3eJJ_6P4rrI7DWX3sXLheTlFDtDKMORsg6ymfk_c6ZrVlmt3Q=w1366-h649" alt="">
+              </a>
+            </div>
+            <div class="gallery-images" style="--duration: 20s;">
+              <a href="#">
+                <img src="https://lh3.googleusercontent.com/u/1/drive-viewer/AFDK6gM8O82uPGAw-93PfoaTeMauF46d4u64mt_6LzBi4_KVt2lvtIN9PSYfKLT8DerdGAMGbeCIc77U_FCCOZ35Ngh8F-U-=w1365-h648" alt="">
+              </a>
+              <a href="#">
+                <img src="https://lh3.googleusercontent.com/u/1/drive-viewer/AFDK6gNkshUb9hner63mB2NhejIndgd7bjeRPA6JEHp9WvojMr36ujYPPLT77aAXtETLCPRBxInUJBHddtegIhoX4PRMloezVA=w1365-h648" alt="">
+              </a>
+              <a href="#">
+                <img src="https://lh3.googleusercontent.com/u/1/drive-viewer/AFDK6gPPedv9CNg_nDqYbTdNxVvY71ITkoLKY_Z-N8GESMZd2Wjr-8oGsOA24Fc6NkPnBFtf_LJC726I3Pc3o30srfsHszvVBw=w1365-h648" alt="">
+              </a>
+              <a href="#">
+                <img src="https://lh3.googleusercontent.com/u/1/drive-viewer/AFDK6gMezU2WDWlGG44TOXl7T9IQGyuN7jPOu-MhF_Kg-KBHEJ3OebxFQ20RWLv4MAGA60fVvLR2SueThR1qpKwz5o9YjAaQkQ=w1366-h649" alt="">
+              </a>
+              <a href="#">
+                <img src="https://lh3.googleusercontent.com/u/1/drive-viewer/AFDK6gO7-i8bmgk_iFZZix3u6-QIPdnvtq46cBkMgMLftRCXr4cg1uq4ClGh_hnX0_GPgWHkob3eRleAj9q_puMBoTgPTPxOIQ=w1366-h649" alt="">
+              </a>
+              <a href="#">
+                <img src="https://lh3.googleusercontent.com/u/1/drive-viewer/AFDK6gNrqmX6MNS7IkoAmQaD7qmXS2zd0n8oFbe345ttWBO60uSHZayGgoZu60pN9xHiO1qk7mI8k6l41IKvZvkpyIdLC3dqcQ=w1365-h648" alt="">
+              </a>
+              <a href="#">
+                <img src="https://lh3.googleusercontent.com/u/1/drive-viewer/AFDK6gMd9evrPyfRoK88L9fFmsbwzF6niQ05irZxKyADpaGRdmzhYcWA11B-JttCb8v5UoXsRYQADgM4bmfhISASt4qojXY-Bw=w1366-h649" alt="">
+              </a>
+              <a href="#">
+                <img src="https://lh3.googleusercontent.com/u/1/drive-viewer/AFDK6gOpfjOZk9_gpgzTT88OI7exNYuqam2nATXMaIzidKNnEab6fLqOYQQicXj_q1qIGtOcHo4JIlKbvSl8qQePoy02g5XQ=w1366-h649" alt="">
+              </a>
+              <a href="#">
+                <img src="https://lh3.googleusercontent.com/u/1/drive-viewer/AFDK6gOPVsfQS81k3GmG6YYxKU5aIhOWte3YOHDDtollCpCA0cCS7cjzKaJLJ1ct2i5bxrT6AE8YQde_NFyZp7t9sc0PuwWDwt7P-QbXcDbiv6gbRgYEsmtbpcQ14RoY=w1365-h648" alt="">
+              </a>
+              <a href="#">
+                <img src="https://images.unsplash.com/photo-1549877452-9c387954fbc2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cGxhY2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+              </a>
+              <a href="#">
+                <img src="https://images.unsplash.com/photo-1622616234995-072f0e880b81?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHBsYWNlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+              </a>
+              <a href="#">
+                <img src="https://images.unsplash.com/photo-1526911799633-84b785eb1f6a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHBsYWNlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+              </a>
+            </div>
+            <div class="gallery-images" style="--duration: 10s;">
+              <a href="#">
+                <img src="https://images.unsplash.com/photo-1517713982677-4b66332f98de?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGxhY2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+              </a>
+              <a href="#">
+                <img src="https://images.unsplash.com/photo-1556905200-279565513a2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGxhY2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+              </a>
+              <a href="#">
+                <img src="https://plus.unsplash.com/premium_photo-1669735478115-e4b5fe938ab1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8cGxhY2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+              </a>
+              <a href="#">
+                <img src="https://images.unsplash.com/photo-1549877452-9c387954fbc2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cGxhY2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+              </a>
+              <a href="#">
+                <img src="https://images.unsplash.com/photo-1622616234995-072f0e880b81?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHBsYWNlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+              </a>
+              <a href="#">
+                <img src="https://images.unsplash.com/photo-1526911799633-84b785eb1f6a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHBsYWNlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+              </a>
+              <a href="#">
+                <img src="https://images.unsplash.com/photo-1517713982677-4b66332f98de?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGxhY2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+              </a>
+              <a href="#">
+                <img src="https://images.unsplash.com/photo-1556905200-279565513a2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGxhY2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+              </a>
+              <a href="#">
+                <img src="https://plus.unsplash.com/premium_photo-1669735478115-e4b5fe938ab1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8cGxhY2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+              </a>
+              <a href="#">
+                <img src="https://images.unsplash.com/photo-1549877452-9c387954fbc2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cGxhY2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+              </a>
+              <a href="#">
+                <img src="https://images.unsplash.com/photo-1622616234995-072f0e880b81?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHBsYWNlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+              </a>
+              <a href="#">
+                <img src="https://images.unsplash.com/photo-1526911799633-84b785eb1f6a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHBsYWNlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+              </a>
+            </div>
+            <!-- <div class="gallery-images" style="--duration: 15s;">
+              <a href="#">
+                <img src="https://images.unsplash.com/photo-1517713982677-4b66332f98de?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGxhY2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+              </a>
+              <a href="#">
+                <img src="https://images.unsplash.com/photo-1556905200-279565513a2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGxhY2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+              </a>
+              <a href="#">
+                <img src="https://plus.unsplash.com/premium_photo-1669735478115-e4b5fe938ab1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8cGxhY2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+              </a>
+              <a href="#">
+                <img src="https://images.unsplash.com/photo-1549877452-9c387954fbc2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cGxhY2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+              </a>
+              <a href="#">
+                <img src="https://images.unsplash.com/photo-1622616234995-072f0e880b81?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHBsYWNlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+              </a>
+              <a href="#">
+                <img src="https://images.unsplash.com/photo-1526911799633-84b785eb1f6a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHBsYWNlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+              </a>
+              <a href="#">
+                <img src="https://images.unsplash.com/photo-1517713982677-4b66332f98de?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGxhY2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+              </a>
+              <a href="#">
+                <img src="https://images.unsplash.com/photo-1556905200-279565513a2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGxhY2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+              </a>
+              <a href="#">
+                <img src="https://plus.unsplash.com/premium_photo-1669735478115-e4b5fe938ab1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8cGxhY2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+              </a>
+              <a href="#">
+                <img src="https://images.unsplash.com/photo-1549877452-9c387954fbc2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cGxhY2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+              </a>
+              <a href="#">
+                <img src="https://images.unsplash.com/photo-1622616234995-072f0e880b81?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHBsYWNlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+              </a>
+              <a href="#">
+                <img src="https://images.unsplash.com/photo-1526911799633-84b785eb1f6a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHBsYWNlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+              </a>
+            </div> -->
+            <!-- <div class="gallery-images" style="--duration: 10s;">
+              <a href="#">
+                <img src="https://images.unsplash.com/photo-1517713982677-4b66332f98de?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGxhY2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+              </a>
+              <a href="#">
+                <img src="https://images.unsplash.com/photo-1556905200-279565513a2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGxhY2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+              </a>
+              <a href="#">
+                <img src="https://plus.unsplash.com/premium_photo-1669735478115-e4b5fe938ab1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8cGxhY2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+              </a>
+              <a href="#">
+                <img src="https://images.unsplash.com/photo-1549877452-9c387954fbc2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cGxhY2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+              </a>
+              <a href="#">
+                <img src="https://images.unsplash.com/photo-1622616234995-072f0e880b81?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHBsYWNlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+              </a>
+              <a href="#">
+                <img src="https://images.unsplash.com/photo-1526911799633-84b785eb1f6a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHBsYWNlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+              </a>
+              <a href="#">
+                <img src="https://images.unsplash.com/photo-1517713982677-4b66332f98de?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGxhY2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+              </a>
+              <a href="#">
+                <img src="https://images.unsplash.com/photo-1556905200-279565513a2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGxhY2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+              </a>
+              <a href="#">
+                <img src="https://plus.unsplash.com/premium_photo-1669735478115-e4b5fe938ab1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8cGxhY2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+              </a>
+              <a href="#">
+                <img src="https://images.unsplash.com/photo-1549877452-9c387954fbc2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cGxhY2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
+              </a>
+              <a href="#">
+                <img src="https://images.unsplash.com/photo-1622616234995-072f0e880b81?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHBsYWNlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+              </a>
+              <a href="#">
+                <img src="https://images.unsplash.com/photo-1526911799633-84b785eb1f6a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHBsYWNlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
+              </a>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end: Gallery Section -->  
+
+
+  <!-- <section >
+    <div class="over">
+      <div class="heroinfo">
+        <h1 style="color: #DBC2CF;
+        text-transform: uppercase;
+        -webkit-text-fill-color: #000000;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #DBC2CF;
+        letter-spacing: 3px;
+        text-stroke: 1px #DBC2CF;
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 3vw;
+        ">Resilient and Sustainable Infrastructure</h1>
+        <p class="text-white">We want infra to benefit a region and be around for a long time that is why it needs to be sustainable and resilient. Sustainable infrastructure in our view needs to live up to three sustainable goals; society, environment and economics. The United Nations, G20, World Bank and many other international organizations express their concern about the scarcity of expertise and capacity that is required for planning and developing sustainable infrastructure. At the same time it is clear that realizing infrastructure that is sustainable and resilient is more important than ever</p>
+       
+      </div>
+      <div class="herocard">
+
+        <div class="card1">
+          <div>
+            <h4 class="fw-bold">Optimally serving societal needs in the short and long term
+            </h4>
+          </div>
+        </div>
+
+        <div class="card1">
+          <div>
+            <h4 class="fw-bold">Minimizing negative effects of projects on communities and environment
+            </h4>
+          </div>
+        </div>
+
+        <div class="card1">
+          <div>
+            <h4 class="fw-bold">Increasing support for and minimizing risk to developers
+            </h4>
+          </div>
+
+        </div>
+
+        <div class="card1">
+          <div>
+            <h4 class="fw-bold">Unlocking increased sustainable infrastructure investment opportunities
+            </h4>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+
+
+  <div class="px-4 py-5 my-5 container">
+    <!-- <img class="d-block mx-auto mb-4" src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57"> -->
+    <h1 class="display-5 fw-bold text-center">Theme for 15th Edition</h1>
+    <h3 class="text-center">Resilient and Sustainable Infrastructure</h3>
+    <div class="col-lg-12">
+      <p class="lead mb-4" style="font-size: 18px;">We want infra to benefit a region and be around for a long time that is why it needs to be sustainable and resilient. Sustainable infrastructure in our view needs to live up to three sustainable goals; society, environment and economics. The United Nations, G20, World Bank and many other international organizations express their concern about the scarcity of expertise and capacity that is required for planning and developing sustainable infrastructure. At the same time it is clear that realizing infrastructure that is sustainable and resilient is more important than ever</p>
+      <!-- <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <button type="button" class="btn btn-primary btn-lg px-4 gap-3" fdprocessedid="84j21r">Primary button</button>
+        <button type="button" class="btn btn-outline-secondary btn-lg px-4" fdprocessedid="p0tep">Secondary</button>
+      </div> -->
+      <div class="container px-4 " id="icon-grid">
+    
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 ">
+          <div class="col d-flex align-items-start py-3 text-center" >
+            <div class="py-3 pb-1 px-3 text-center" style="border: 2px solid #FDEDF0; border-radius: 5px; background-color: #141b25;">
+              <!-- <h3 class="fw-bold mb-0 fs-4">Featured title</h3> -->
+              <p>Optimally serving societal needs in the short and long term.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start py-3 text-center" >
+            <div class="py-3 pb-1 px-3" style="border: 2px solid #FDEDF0; border-radius: 5px; background-color: #141b25;">
+              <p>Minimizing negative effects of projects on communities and environment.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start py-3 text-center" >
+            <div class="py-3 pb-1 px-3" style="border: 2px solid #FDEDF0; border-radius: 5px; background-color: #141b25;">
+              <p>Increasing support for and minimizing risk to developers.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start py-3 text-center" >
+            <div class="py-3 pb-1 px-3" style="border: 2px solid #FDEDF0; border-radius: 5px; background-color: #141b25;">
+              <p>Unlocking increased sustainable infrastructure investment opportunities.</p>
+            </div>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  <!-- ########################################################## -->
+
+
+
+  <div class="container col-xxl-8 px-4">
+    <div class="row flex-lg-row align-items-center g-5">
+      <div class="col-12 col-sm-12 col-lg-6" style="border-radius: 10px;">
+        <video  controls style="border-radius: 10px;" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="900" height="700">
+          <source src="https://raw.githubusercontent.com/Himanshi62/AAKAAR/main/aakar-website/static/aakaar_intro.mp4" type="video/ogg">
+        </video>  
+        <!-- <img src="bootstrap-themes.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy"> -->
+      
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold lh-1 mb-3">Aakaar Festival Event</h1>
+        <p class="">After 3 years, we are again bringing to you all Asia'a largest civil engineering festival, Aakaar, in OFFLINE mode. So get yourself all geared up to give ears to insightful words of the world's leading industrialists,  witness intelligent research works and participate in exciting competitions and grab the chance to win huge cash prizes. Be a part of this memorable two days journey on 18th -19th March and get yourself registered for it soon as the campus of IIT Bombay awaits you.</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <button type="button" class="btn btn-primary btn-lg px-4 me-md-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i class="fa fa-bell"></i>  Notify</button>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- ############################################################ -->
+<!-- Modal -->
+<div class="modal fade text-black" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Register</h5>
+      </div>
+      <div class="modal-body">
+        <form action="/notify" method="post"> 
+            {% csrf_token %}
+          <div class="mb-3">
+            <label for="colName" class="form-label">Name </label>
+            <input type="text" class="form-control" id="colName" name="name"  required>
+          </div>
+
+          <div class="mb-3">
+            <label for="state" class="form-label">Email ID            </label>
+            <input type="email" class="form-control" id="state" name="email"  required>
+          </div>
+
+          <div class="mb-3">
+            <label for="phoneNo" class="form-label">Contact No.   </label>
+            <input type="number" class="form-control" id="phoneNo" name="contact"  required>
+          </div>
+
+          <div class="mb-3">
+            <label for="whatsNo" class="form-label">College/School </label>
+            <input type="text" class="form-control" id="whatsNo" name="colg" >
+          </div>
+
+          <div class="mb-3">
+              <label for="colName" class="form-label">Address</label>
+              <input type="text" class="form-control" id="colName" name="address" >
+            </div>
+  
+           
+           
+  
+            
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+  <!-- <div class="container">
+    <h1 class="display-5 fw-bold text-center">Our Services</h1>
+    <div class="row  ">
+
+    <div class="card col d-flex align-items-start py-3" style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url('https://wallpapers.com/images/hd/civil-engineering-construction-site-blueprint-0x148xb5hbkabmqu.jpg');">
+      <div class="content">
+        <h2>Our Services</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        <a href="#">Order Now</a>
+      </div>
+    </div>
+    
+    <div class="card col d-flex align-items-start py-3">
+      <div class="content">
+        <h2>GRILLED FISH</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        <a href="#">Order Now</a>
+      </div>
+    </div>
+    
+    <div class="card col d-flex align-items-start py-3">
+      <div class="content">
+        <h2>CHICKEN BURGER</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        <a href="#">Order Now</a>
+      </div>
+    </div>
+    <div class="card col d-flex align-items-start py-3">
+      <div class="content">
+        <h2>CHICKEN BURGER</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        <a href="#">Order Now</a>
+      </div>
+    </div>
+
+  </div>
+
+  </div> -->
+  <div class="container" style="padding-top: 10px; margin-top: 80px;">
+
+  <h1 class="display-5 fw-bold text-center">Our Pillars</h1>
+
+  <main class="page-content">
+    
+    <div class="card">
+      <div class="content">
+        
+        <h1 class="title" style="padding-top: -2px; margin-top:-2.5px">EVENTS</h1>
+        <p class="copy" style="padding-top: 2px; margin-top: -2px;">Aakaar's 15th edition offers a great chance to try out professional software,gain knowledge from famous entrepreneurs and academicians through lecture series, and more.
+        </p>
+        <br>
+      <a href="https://events.aakaariitbombay.org/"><button class="btn">Explore</button></a>  
+      </div>
+    </div>
+    <div class="card" >
+      <div class="content">
+        <h1 class="title" style="padding-top: -2px; margin-top:-1px">COMPETITIONS</h1>
+        <p class="copy" style="padding-top: 2px; margin-top: -2px;">Aakaar's 15th edition offers to learn civil engineering principles through enjoyable quizzes and competitions while still emerging with creative solutions to challenges faced by <br>  industry. </p>
+          
+          <a href="https://competition.aakaariitbombay.org/"><button class="btn">Explore</button></a>  
+        </div>
+    </div>
+    <div class="card">
+      <div class="content">
+        <h1 class="title" style="padding-top: -2px; margin-top:5px">SYMPOSIUM</h1>
+        <p class="copy" style="padding-top: 2px; margin-top: 2px;">International Civil Engineering Symposium provides a platform to exchange ideas and scientific knowledge through intense professional interaction among aspiring enthusiastic civil engineering researchers.</p>
+          <a href="https://symposium.aakaariitbombay.org/"><button class="btn" style="padding-top: 2px; margin-top: -10px;">Explore</button></a>  
+        </div>
+    </div>
+    <div class="card">
+      <div class="content">
+        <h2 class="title" style="padding-top: -2px; margin-top:-20px">SMART PITCH</h2>
+        <!-- <h1 class="title">PITCH</h1> -->
+        <p class="copy" style="padding-top: 2px; margin-top: -2px;">Promote entrepreneurship and support civil engineering  startups with an opportunities for incubation as well as investment through investor and judging panel</p>
+       <a href="https://aakaariitbombay.org/smartpitch/"><button class="btn">Explore</button></a>   
+        </div>
+    </div>
+  </main>
+
+</div>
+
+  <!-- <div>
+    <div class="container">
+      <h2 class="pb-5  text-left mb-5 display-5 text-white fw-bold">PORTFOLIOS</h2>
+      <div class="row align-items-center connecting-lines d-flex">
+        <div class="col-2 text-center bottom d-inline-flex justify-content-center align-items-center">
+          <div class="circle font-weight-bold"><i class="fa fa-check"></i></div>
+        </div>
+        <div class="col-9">
+          <h4>Events</h4>
+          <p>Aakaar IIT Bombay, in association with the Society for Innovation and Entrepreneurship (SINE), launches the Smart Pitch competition, a platform that allows all startups to pitch their ideas to an esteemed panel of investors and SINE mentors. Smart Pitch is a competition for Civil Engineering start-ups that offers excellent opportunities. Smart Pitch offers opportunities for startup incubation at SINE, IIT Bombay, as well as investment in startup ideas through our investor panel.</p>
+        </div>
+      </div>
+      <div class="row timeline">
+        <div class="col-2">
+          <div class="corner top-right"></div>
+        </div>
+        <div class="col-8">
+          <hr/>
+        </div>
+        <div class="col-2">
+          <div class="corner left-bottom"></div>
+        </div>
+      </div>
+      <div class="row align-items-center justify-content-end connecting-lines d-flex">
+        <div class="col-9 text-right">
+          <h4>Competitions</h4>
+          <p>Aakaar IIT Bombay, in association with the Society for Innovation and Entrepreneurship (SINE), launches the Smart Pitch competition, a platform that allows all startups to pitch their ideas to an esteemed panel of investors and SINE mentors. Smart Pitch is a competition for Civil Engineering start-ups that offers excellent opportunities. Smart Pitch offers opportunities for startup incubation at SINE, IIT Bombay, as well as investment in startup ideas through our investor panel.</p>
+        </div>
+        <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">
+          <div class="circle font-weight-bold"><i class="fa fa-check"></i></div>
+        </div>
+      </div>
+      <div class="row timeline">
+        <div class="col-2">
+          <div class="corner right-bottom"></div>
+        </div>
+        <div class="col-8">
+          <hr/>
+        </div>
+        <div class="col-2">
+          <div class="corner top-left"></div>
+        </div>
+      </div>
+]      <div class="row align-items-center connecting-lines d-flex">
+        <div class="col-2 text-center top d-inline-flex justify-content-center align-items-center">
+          <div class="circle font-weight-bold"><i class="fa fa-check"></i></div>
+        </div>
+        <div class="col-9">
+          <h4>Symposium</h4>
+          <p>Aakaar IIT Bombay is proud to launch it's Seventh International Civil Engineering Symposium (ICES) with the prime motive of encouraging young research enthusiasts in the field of civil engineering and will act as a platform to exchange ideas & scientific knowledge through intense professional interaction among aspiring civil engineering researchers. We believe this will lead to the fruitful germination of collaborative research work. </p>
+        </div>
+      </div>
+      <div class="row timeline">
+        <div class="col-2">
+          <div class="corner top-right"></div>
+        </div>
+        <div class="col-8">
+          <hr/>
+        </div>
+        <div class="col-2">
+          <div class="corner left-bottom"></div>
+        </div>
+      </div>
+       <div class="row align-items-center justify-content-end connecting-lines d-flex">
+        <div class="col-9 text-right">
+          <h4>College Representative Program</h4>
+          <p>The College Representative Program is the core of Aakaar’s outreach initiative. We at Aakaar hope to connect with college students across India to pique their interest in Civil Engineering and provide a platform to pursue the same.
+
+            This Program enables you to create a strong network of like-minded people who can support your future professional pursuits while gaining invaluable experience, organising unique events, and putting on spectacular events.</p>
+        </div>
+        <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">
+          <div class="circle font-weight-bold"><i class="fa fa-check"></i></div>
+        </div>
+      </div>
+       <div class="row timeline">
+        <div class="col-2">
+          <div class="corner right-bottom"></div>
+        </div>
+        <div class="col-8">
+          <hr/>
+        </div>
+        <div class="col-2">
+          <div class="corner top-left"></div>
+        </div>
+      </div>
+      <div class="row align-items-center connecting-lines d-flex">
+        <div class="col-2 text-center top d-inline-flex justify-content-center align-items-center">
+          <div class="circle font-weight-bold"><i class="fa fa-check"></i></div>
+        </div>
+        <div class="col-9">
+          <h4>Smart Pitch</h4>
+          <p>Aakaar IIT Bombay, in association with the Society for Innovation and Entrepreneurship (SINE), launches the Smart Pitch competition, a platform that allows all startups to pitch their ideas to an esteemed panel of investors and SINE mentors. Smart Pitch is a competition for Civil Engineering start-ups that offers excellent opportunities. Smart Pitch offers opportunities for startup incubation at SINE, IIT Bombay, as well as investment in startup ideas through our investor panel.</p>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  
+          
+
+
+
+
+
+
+<!-- ################ -->
+<!-- <div class="container">
+<div class="row" data-masonry="{&quot;percentPosition&quot;: true }" style="position: relative; height: 1933px;">
+  <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 0px;">
+    <div class="card">
+      <img class="bd-placeholder-img card-img-top" width="100%" height="200" src="https://wallpapers.com/images/hd/civil-engineering-construction-site-blueprint-0x148xb5hbkabmqu.jpg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+      <div class="card-body bg-black" style="border: black">
+        <h1 class="card-title">EVENTS</h1>
+        <p class="card-text">Aakaar's 15th edition offers a great chance to try out professional software, gain knowledge from famous entrepreneurs and academicians through lecture series, and more.
+          Chance to see the best-equipped labs in the nation and use your creativity and knowledge. It offers prospective civil engineers a superb platform to investigate and comprehend the breadth of the stream.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 386px;">
+    <div class="card p-3">
+      <figure class="p-3 mb-0">
+        <blockquote class="blockquote">
+          <p>A well-known quote, contained in a blockquote element.</p>
+        </blockquote>
+        <figcaption class="blockquote-footer mb-0 text-muted">
+          Someone famous in <cite title="Source Title">Source Title</cite>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+  <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 587px;">
+    <div class="card">
+      <img class="bd-placeholder-img card-img-top" width="100%" height="200" src="https://wallpapers.com/images/hd/civil-engineering-construction-site-blueprint-0x148xb5hbkabmqu.jpg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+      <div class="card-body bg-black" style="border: black">
+        <h1 class="card-title">COMPETITIONS</h1>
+        <p class="card-text">Aakaar's 15th edition offers a great chance to try out professional software, gain knowledge from famous entrepreneurs and academicians through lecture series, and more.
+          Chance to see the best-equipped labs in the nation and use your creativity and knowledge. It offers prospective civil engineers a superb platform to investigate and comprehend the breadth of the stream.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 965px;">
+    <div class="card text-bg-primary text-center p-3">
+      <figure class="mb-0">
+        <blockquote class="blockquote">
+          <p>A well-known quote, contained in a blockquote element.</p>
+        </blockquote>
+        <figcaption class="blockquote-footer mb-0 text-white">
+          Someone famous in <cite title="Source Title">Source Title</cite>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+  <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 1104px;">
+    <div class="card text-center">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This card has a regular title and short paragraph of text below it.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 1282px;">
+    <div class="card">
+      <svg class="bd-placeholder-img card-img" width="100%" height="260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Card image" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Card image</text></svg>
+    </div>
+  </div>
+  <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 1568px;">
+    <div class="card p-3 text-end">
+      <figure class="mb-0">
+        <blockquote class="blockquote">
+          <p>A well-known quote, contained in a blockquote element.</p>
+        </blockquote>
+        <figcaption class="blockquote-footer mb-0 text-muted">
+          Someone famous in <cite title="Source Title">Source Title</cite>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+  <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 1707px;">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is another card with title and supporting text below. This card has some additional content to make it slightly taller overall.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div> -->
+
+
+
+
+
+
+
+
+
+<section style="padding-top: 10px; margin-top: 80px;">
+  <h1 class="display-5 fw-bold text-center" >Past Year Highlights</h1>
+
+  <!--
+  <div class="section-header">
+    <h1>Carousel Autoplay + Hover Pause</h1>
+  </div>
+  -->
+  <div class="micro-slider" style="padding-bottom: -10px; margin-top: -30px">
+    <div class="slider-item s1"  ></div>
+    <div class="slider-item s2"  ></div>
+    <div class="slider-item s3"  ></div>
+    <div class="slider-item s4" ></div>
+    <div class="slider-item s5"></div>
+    <div class="slider-item s6" ></div>
+  </div>
+</section>
+
+
+
+
+<footer class="w-100 py-4 flex-shrink-0" style="background-color: black; overflow-x:hidden;">
+  <div class="container py-4">
+      <div class="row gy-4 gx-5">
+          <div class="col-lg-4 col-md-6">
+              <h5 class="h1 text-white">Aakaar 2023</h5>
+              <p class="small text-muted">Aakaar in its 15th edition is all set to scale new heights with many new events and competitions. Aakaar provides an exceptional platform for aspiring civil engineers to explore and learn about the vastness of the stream.</p>
+              <p class="small text-muted mb-0">&copy; 2023 Aakaar IIT Bombay 15th Edition</p>
+              <p class="small text-muted mb-0">&copy; All rights reserved.</p>
+
+          </div>
+          <div class="col-lg-2 col-md-6">
+              <h5 class="text-white mb-3">Quick links</h5>
+              <ul class="list-unstyled ">
+                  <li><a href="#">Events</a></li>
+                  <li><a href="#">Competitions</a></li>
+                  <li><a href="#">Symposium</a></li>
+                  <li><a href="#">Smart Pitch</a></li>
+                  <li><a href="#">CR Portal</a></li>
+
+              </ul>
+          </div>
+          <!-- <div class="col-lg-2 col-md-6">
+              <h5 class="text-white mb-3">Quick links</h5>
+              <ul class="list-unstyled text-muted">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Get started</a></li>
+                  <li><a href="#">FAQ</a></li>
+              </ul>
+          </div> -->
+          <div class="col-lg-4 col-md-6">
+              <h5 class="text-white mb-3">Contact</h5>
+              <p class="small text-muted"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+              </svg>   Department of Civil Engineering, IIT Bombay, <br> Powai,Mumbai,Maharastra 400076</p>
+              <p class="small text-muted"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-envelope" viewBox="0 0 16 16">
+                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+              </svg>   ask.aakaariitb@gmail.com</p>
+              <h5 class="text-white mb-3">Follow us</h5>
+
+              <!-- <form action="#">
+                  <div class="input-group mb-3">
+                      <input class="form-control" type="text" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+                      <button class="btn btn-primary" id="button-addon2" type="button"><i class="fas fa-paper-plane"></i></button>
+                  </div>
+              </form> -->
+          </div>
+      </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/micro-slider@1.0.9/dist/micro-slider.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+  
+    //===== MICRO-SLIDER begin
+    const __ms = document.querySelector('.micro-slider');
+    const __msSlider = new MicroSlider(__ms, { indicators: true, indicatorText: '' });
+    const hammer = new Hammer(__ms);
+    const __msTimer = 2000;
+    let __msAutoplay = setInterval(() => __msSlider.next(), __msTimer);
+      
+    //detect mouseenter event
+    __ms.onmouseenter = function(e) {
+      clearInterval(__msAutoplay); 
+      console.log(e.type + ' mouse detected');
+    }
+    
+    //detect mouseleave event
+    __ms.onmouseleave = function(e) {
+      clearInterval(__msAutoplay); 
+      __msAutoplay = setInterval(() => __msSlider.next(), __msTimer);
+      console.log(e.type + ' mouse detected');
+    }
+    
+    //detect mouseclick event
+    __ms.onclick = function(e) {
+      clearInterval(__msAutoplay); 
+      console.log(e.type + ' mouse detected');
+    }
+    
+    //detect gesture tap event with hammer js library
+    hammer.on('tap', function(e) {
+      clearInterval(__msAutoplay);
+      console.log(e.type + ' gesture detected');
+    });
+    
+    //detect gesture swipe event with hammer js library
+    hammer.on('swipe', function(e) {
+      clearInterval(__msAutoplay); 
+      __msAutoplay = setInterval(() => __msSlider.next(), __msTimer);
+      console.log(e.type + ' gesture detected');
+    });
+  
+    let slideLink = document.querySelectorAll('.slider-item');
+    if (slideLink && slideLink !== null && slideLink.length > 0){
+      slideLink.forEach( el => el.addEventListener('click', e => {
+        e.preventDefault();
+        let href = el.dataset.href;
+        let target = el.dataset.target;
+        if (href !== '#') window.open(href, target);
+      }));
+    }
+    
+    //===== MICRO-SLIDER end
+    
+  });
+</script>
+
+
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+     
+          <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+
+  
+
+</body>
+</html>
